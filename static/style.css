@@ -1,0 +1,212 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    background-color: rgb(238, 230, 230);
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  .main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  .header{
+    position: top;
+  }
+  .gsi-material-button {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-appearance: none;
+    background-color: #131314;
+    background-image: none;
+    border: 1px solid #747775;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #e3e3e3;
+    cursor: pointer;
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 0.25px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 12px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+    transition: background-color .218s, border-color .218s, box-shadow .218s;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+    max-width: 400px;
+    min-width: min-content;
+    border-color: #8e918f;
+  }
+  
+  .gsi-material-button .gsi-material-button-icon {
+    height: 20px;
+    margin-right: 12px;
+    min-width: 20px;
+    width: 20px;
+  }
+  
+  .gsi-material-button .gsi-material-button-content-wrapper {
+    -webkit-align-items: center;
+    align-items: center;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  
+  .gsi-material-button .gsi-material-button-contents {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+  }
+  
+  .gsi-material-button .gsi-material-button-state {
+    -webkit-transition: opacity .218s;
+    transition: opacity .218s;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .gsi-material-button:disabled {
+    cursor: default;
+    background-color: #13131461;
+    border-color: #8e918f1f;
+  }
+  
+  .gsi-material-button:disabled .gsi-material-button-state {
+    background-color: #e3e3e31f;
+  }
+  
+  .gsi-material-button:disabled .gsi-material-button-contents {
+    opacity: 38%;
+  }
+  
+  .gsi-material-button:disabled .gsi-material-button-icon {
+    opacity: 38%;
+  }
+  
+  .gsi-material-button:not(:disabled):active .gsi-material-button-state, 
+  .gsi-material-button:not(:disabled):focus .gsi-material-button-state {
+    background-color: white;
+    opacity: 12%;
+  }
+  
+  .gsi-material-button:not(:disabled):hover {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+  }
+  
+  .gsi-material-button:not(:disabled):hover .gsi-material-button-state {
+    background-color: white;
+    opacity: 8%;
+  }
+  .summary_section{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    height: 95%;
+    width: 85%;
+    display: flex;
+    margin: auto;
+  }
+  .summary_details{
+    height: 65%;
+    width: 75%;
+    align-items: center;
+  }
+  #file-input{
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+  #upload-button{
+    border: 1px black;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    
+  }
+  #processing {
+    display: none;
+    font-weight: bold;
+    color: red;
+  }
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.custom-dropdown select {
+    appearance: none; /* Remove default arrow */
+    background-color: black; /* Background color */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    width: 200px; /* Adjust width as needed */
+}
+
+/* Adding a custom arrow */
+.custom-dropdown::after {
+    content: '▼';
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: white;
+}
+
+/* Dropdown options styling */
+.custom-dropdown select option {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+}
+
+/* On focus effect */
+.custom-dropdown select:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.google_cal_button{
+  display: none;
+}
