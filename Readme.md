@@ -1,6 +1,6 @@
-# Syllaby Buddy
+# Syllabi Buddy
 
-Syllaby Buddy is a web application designed to help students navigate and manage their school syllabi more efficiently. By analyzing uploaded syllabi, Syllaby Buddy provides summaries, extracts key information, and integrates important deadlines into users' calendars, making academic planning easier and more organized.
+Syllabi Buddy is a web application designed to help students navigate and manage their school syllabi more efficiently. By analyzing uploaded syllabi, Syllaby Buddy provides summaries, extracts key information, and integrates important deadlines into users' calendars, making academic planning easier and more organized.
 
 ## Table of Contents
 
